@@ -1,0 +1,245 @@
+/*======= All Common Style Mention Here ======*/
+html {
+  font-size: $html-font-size;
+}
+@media(max-width:1700px) {
+  html {
+    font-size: ($html-font-size - 1);
+  }
+}
+@media(max-width:1366px) {
+  html {
+    font-size: ($html-font-size - 1);
+  }
+}
+@media(max-width:1280px) {
+  html {
+    font-size: ($html-font-size - 1);
+  }
+}
+@media(max-width:991px) {
+  html {
+    font-size: ($html-font-size - 2);
+  }
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: $body-bg;
+	font-family: $font-family-base;
+	font-weight: $font-weight-normal;
+	color: $body-color;
+	position: relative;
+	width: 100%;
+	height: 100%;
+  overflow-x: hidden;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-normal;
+}
+[tabindex='-1']:focus {
+  outline: none;
+}
+ul, ol {
+  padding: 0;
+}
+select,
+button,
+textarea,
+input {
+  vertical-align: baseline;
+}
+html,
+body {
+  &[dir=rtl],
+  &[dir=ltr] {
+    unicode-bidi: embed
+  }
+}
+bdo[dir=rtl] {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+bdo[dir=ltr] {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}
+a {
+  transition: all 0.5s ease 0s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+	&:hover, &:focus, &.active {
+		color: inherit;
+		text-decoration: none;
+    outline: 0;
+	}
+}
+*::-moz-selection {
+  background-color: $primary;
+  color: $light;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $input-placeholder-color !important;
+}
+* {
+	outline: none;
+  &:hover, &:focus, &.active {
+    outline: none;
+  }
+}
+sup {
+  top: -0.9em;
+}
+disabled {
+  cursor: none;
+}
+.vr-super {
+  vertical-align: super;
+}
+.pos-relative {
+  position: relative;
+}
+.pos-static {
+  position: static !important;
+}
+.overlay-wrap {
+  position: relative;
+}
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.border-rad-sm {
+  border-radius: 5px;
+}
+address {
+  span {
+    display: block;
+  }
+}
+.pos-center {
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.center-holder {
+  display: inline-block;
+  height: auto;
+  padding: 1.25rem;
+  vertical-align: middle;
+  width: 90%;
+}
+.strike p {
+  text-decoration: line-through;
+}
+.row.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+.switch {
+  &.on {
+    background-color: $success;
+  }
+}
+.modal-open {
+  overflow: visible !important;
+}
+/*======== Breadcrumb =========*/
+.breadcrumb {
+  background: none;
+}
+/*======== Loader Scss ========*/
+.rct-loader {
+  position: fixed !important;
+  background-color: rgba(0,0,0,.9);
+  top: 0;
+  bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+  .circle {
+    border-color: $blue !important;
+  }
+}
+.loader-overlay {
+	position: absolute;
+	background: rgba(255,255,255, 0.8);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	z-index: 99;
+	align-items: center;
+	overflow: hidden;
+  margin: 0 auto;
+}
+/*======== Responsive =========*/
+@media (max-width: 1600px) and (min-width: 1400px) {
+	.d-lg-full {
+		max-width: 100% !important;
+		flex-basis: 100% !important;
+	}
+	.d-lg-half-block {
+		max-width: 50% !important;
+		flex-basis: 50% !important;
+	}
+}
+@media (max-width: 1399px) and (min-width: 1200px) {
+	.d-md-full {
+		max-width: 100% !important;
+		flex-basis: 100% !important;
+	}
+	.d-md-half-block {
+		max-width: 50% !important;
+		flex-basis: 50% !important;
+	}
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+	.d-sm-full {
+		max-width: 100% !important;
+		flex-basis: 100% !important;
+	}
+	.d-sm-half-block {
+		max-width: 50% !important;
+		flex-basis: 50% !important;
+	}
+}
+@media (max-width: 940px) and (min-width: 576px) {
+	.d-xs-full {
+		max-width: 100% !important;
+		flex-basis: 100% !important;
+	}
+	.d-xs-half-block {
+		max-width: 50% !important;
+		flex-basis: 50% !important;
+	}
+}
+@media (max-width: 575px) and (min-width: 450px) {
+  .d-xxs-full {
+		max-width: 100% !important;
+		flex-basis: 100% !important;
+	}
+	.d-xxs-half-block {
+		max-width: 50% !important;
+		flex-basis: 50% !important;
+	}
+}
+@media (max-width: 575px) and (min-width: 320px) {
+  .display-n {
+    display: none !important;
+  }
+}

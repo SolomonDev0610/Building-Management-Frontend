@@ -1,0 +1,107 @@
+.file-list-content {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.file-dynamic-item {
+	display: flex;
+	align-items: center;
+}
+.file-dynamic-table {
+	width: 400px !important;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	> div:nth-child(1) {
+		height: 300px;
+		flex: 1 0;
+	}
+	.dynamic-item {
+		display: flex;
+		height: 70px;
+		align-items: center;
+		justify-content: space-between;
+		h3 {
+			font-size: 70%;
+			margin: 0;
+			width: 160px;
+			font-weight: 900;
+			text-transform: uppercase;
+		}
+		span.name {
+			width: 160px;
+		}
+		> div {
+			width: 40%;
+		}
+	}
+}
+.file-dynamic-table.preview {
+	width: 100% !important;
+	.dynamic-item {
+		display: flex;
+		height: 40px;
+	}
+}
+
+.card-files-list {
+	padding: 2rem;
+	.card-files {
+		position: relative;
+		padding: 0.25rem;
+		width: 100%;
+		margin: 0.5rem 0 1rem 0;
+		transition: box-shadow 0.25s;
+		transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+		border-radius: 2px;
+		-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+			0 1px 5px 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+		.card-file-img {
+			padding: 0 25px;
+			margin-top: -25px !important;
+			margin-bottom: 25px;
+			width: 100%;
+			img {
+				width: 100%;
+				max-height: 100%;
+				-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+					0 1px 5px 0 rgba(0, 0, 0, 0.2);
+				box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+					0 1px 5px 0 rgba(0, 0, 0, 0.2);
+			}
+		}
+		.card-file-description {
+			text-align: center;
+			.file-name {
+				font-size: 2rem;
+				margin-bottom: 0px !important;
+			}
+			.file-format-name {
+				font-size: 1rem;
+			}
+			@media screen and (max-width: 1280px) {
+				.file-name {
+					font-size: 1.25rem;
+				}
+				.file-format-name {
+					font-size: 0.75rem;
+				}
+			}
+		}
+		&:hover {
+			-webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12),
+				0 5px 5px -3px rgba(0, 0, 0, 0.2);
+			box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12),
+				0 5px 5px -3px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+.loader {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}

@@ -1,0 +1,319 @@
+/*========== All UI Element Style ==========*/
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+}
+/*========== Alert Scss ==========*/
+.icon-alert {
+  .alert {
+    padding: 0;
+    .alert-addon {
+      background-color: rgba(0,0,0,0.2);
+      display: flex;
+      font-size: 1.563rem; //25px;
+      width: 50px;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 0;
+    }
+    p {
+      margin-bottom: 0;
+      padding: 10px;
+      display: inline-block;
+      padding-left: 4.375rem; //70px;
+    }
+  }
+}
+/*========= App Bar Scss ==========*/
+.appbar-wrapper {
+  .hamburger {
+    span {
+      @include border(1px solid, $white, top bottom left right);
+    }
+  }
+  .navbar-right {
+    > li:not(.dropdown) {
+      a {
+        font-size: 1.875rem; //30px;
+      }
+    }
+  }
+}
+/*========== Avatar Scss ==========*/
+.avatar-wrapper {
+  [class^="border-"], [class*="border-"] {
+    border-width: 2px;
+    border-style: solid;
+  }
+}
+.size-120 {
+  @extend .square-120;
+}
+.size-100 {
+  @extend .square-100;
+}
+.size-80 {
+  @extend .square-80;
+}
+.size-60 {
+  @extend .square-60;
+}
+.size-40 {
+  @extend .square-40;
+}
+.avatar-wrapper {
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/*========== Buttons Scss ==========*/
+.sub-heading {
+  font-size: 14px;
+  display: block;
+  color: $gray-600;
+  margin-bottom: 1.875rem; //30px;
+  text-transform: capitalize;
+}
+.btn * {
+  outline: none;
+}
+.btn-lg, .btn-group-lg > .btn {
+	padding: 0.8rem 1rem !important;
+	font-size: 1.1rem !important;
+	line-height: 1.5 !important;
+}
+[class^="btn-"], [class*="btn-"], button {
+  &:focus {
+    box-shadow: none !important;
+    outline: none;
+  }
+}
+.btn-warning, .btn-info {
+  color: $white;
+  &:hover, &:focus, &.active {
+    color: $white;
+  }
+}
+.btn-icon {
+  i {
+    font-size: 1.125rem; //12px;
+    margin: 0 10px;
+  }
+}
+[class^="btn-circle"], [class*="btn-circle"] {
+  @extend .square-50;
+  border-radius: 100%;
+  line-height: 55px;
+  font-size: 1.25rem; //20px;
+  &:hover, &:focus, &.active {
+    color: $white;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+  }
+}
+.btn-small {
+  padding: 4px 15px;
+  font-size: 12px;
+}
+.btn-xs {
+  padding: 5px 10px !important;
+  font-size: 12px !important;
+  min-height: 30px !important;
+}
+.btn-transparent {
+  background-color: transparent !important;
+  border: 1px solid $white !important;
+  color: $white !important;
+  border-radius: $input-radius !important;
+  height: $input-lg-height !important;
+}
+.btn-outline-default {
+  @include border(1px solid, $input-border-color, top bottom left right);
+  border-radius: $border-radius-sm;
+  color: $gray-900;
+  padding: 4px 8px;
+}
+.btn-twitter {
+  background-color: $twitter-bg !important;
+}
+.btn-facebook {
+  background-color: $facebook-bg !important;
+}
+.btn-google {
+  background-color: $google-bg !important;
+}
+.btn-linkedin {
+  background-color: $twitter-bg !important;
+}
+.btn-pinterest {
+  background-color: $pinterest-bg !important;
+}
+.btn-instagram {
+  background-color: $instagram-bg !important;
+}
+.btn-rss {
+  background-color: $rss-bg !important;
+}
+.btn-tumblr {
+  background-color: $tumblr-bg !important;
+}
+.btn-linkedin {
+  background-color: $linkedin-bg !important;
+}
+.btn-dribbble {
+  background-color: $dribbble-bg !important;
+}
+.btn-youtube {
+  background-color: $youturct-bg !important;
+}
+.btn-github {
+  background-color: $github-bg !important;
+}
+.btn-skype {
+  background-color: $skype-bg !important;
+}
+/*========== Badge Scss ==========*/
+.badge-xs {
+  width: 0;
+  height: 0;
+  padding: 9px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 0;
+  font-size: 55%;
+}
+.badge-sm {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 3px 8px;
+}
+.badge-lg {
+  padding: 15px 25px !important;
+}
+.badge-top-right {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+}
+.badge:not(.badge-light, .badge-xs) {
+  padding: 8px 15px;
+  color: $white;
+  &:hover, &:focus, &.active {
+    color: $white;
+  }
+}
+.badge-default {
+  background-color: $gray-400;
+}
+/*========== Cards Scss ==========*/
+.card-img-overlay {
+  opacity: .8;
+  color: $white;
+}
+/*========== Chip Scss ==========*/
+.chip-wrapper:not([class^="chip-outline-"], [class*="chip-outline-"]) {
+  path {
+    fill: $white !important;
+  }
+  .rct-block-content {
+    > div {
+      vertical-align: middle;
+    }
+  }
+}
+/*======== GridList Scss =========*/
+.gradient-overlay {
+  background: -webkit-linear-gradient(180deg,rgba(0,0,0,.7) 0,rgba(0,0,0,.3) 70%,transparent) !important
+}
+/*========== Lists Scss ==========*/
+.list-wrapper {
+  .zmdi {
+    line-height: 30px;
+  }
+  .listSection {
+    background-color: $block-bg;
+  }
+}
+/*========== Progress Bar Scss ==========*/
+.progress-primary {
+  color: $blue !important;
+}
+.progress-info {
+  color: $cyan !important;
+}
+.progress-success {
+  color: $green !important;
+}
+.progress-warning {
+  color: $yellow !important;
+}
+.progress-danger {
+  color: $red !important;
+}
+.progress-indigo {
+  color: $indigo !important;
+}
+.progress-teal {
+  color: $teal !important;
+}
+.progress-purple {
+  color: $purple !important;
+}
+.progress-pink {
+  color: $pink !important;
+}
+.progress-orange {
+  color: $orange !important;
+}
+/*========= Responsive ========*/
+@media (max-width: 1024px) and (min-width: 320px) {
+  .cardsmasonry-wrapper {
+    .card-columns {
+    	column-count: 2;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .app-wrapper {
+    .navbar-right {
+      li:last-child {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .app-wrapper {
+    .navbar-right {
+      li {
+        width: 1.75rem;
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .cardsmasonry-wrapper {
+    .card-columns {
+      column-count: 1;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .app-wrapper {
+    .navbar-right {
+      li:nth-child(n+2) {
+        display: none;
+      }
+    }
+  }
+}

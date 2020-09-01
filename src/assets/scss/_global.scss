@@ -1,0 +1,14 @@
+html,
+body,
+#root {
+	min-height: 100vh;
+}
+
+#root {
+	flex-direction: column;
+}
+
+.page-content {
+	padding: 0 1em;
+	flex: 1;
+}

@@ -1,0 +1,27 @@
+.loader {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.pb-content-text-field {
+	height: 3rem;
+	div {
+		div {
+			margin: 10px;
+		}
+		input[type='text'] {
+			height: 2.25rem;
+			line-height: 2.25rem;
+		}
+	}
+}
+
+.table-label-no-data {
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

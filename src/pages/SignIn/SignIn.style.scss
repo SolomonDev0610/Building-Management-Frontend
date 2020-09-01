@@ -1,0 +1,157 @@
+@import '../../assets/scss/bootstrap.scss';
+
+.sign-in-wrapper {
+	flex: 1;
+	> .sign-in-bg-color {
+		position: fixed;
+		z-index: 3;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(rgba(86, 194, 204, 0.8), rgba(128, 99, 160, 0.8));
+	}
+
+	> .sign-in-img-bg {
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		background-image: url('https://picsum.photos/1920/1080/?image=862');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	> .sign-in-body {
+		position: relative;
+		z-index: 4;
+		padding: 30px 25px 0 25px;
+		flex: 1;
+
+		> .pb-logo-wrapper {
+			width: 218px;
+			> .pb-logo {
+				height: 50px;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-image: url('../../assets/pb-img/pb-logo.png');
+			}
+		}
+
+		> .pb-login-wrapper {
+			flex: 1;
+			justify-content: center;
+			align-items: center;
+
+			> .pb-login {
+				//min-height: 500px;
+				width: 500px;
+				background: rgba(255, 255, 255, 0.8);
+				border-radius: 5px;
+				box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+				padding: 30px;
+
+				.login-option,
+				.signup-option {
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					justify-content: space-between;
+
+					.button-actions {
+						.link-action {
+							color: #56c2cc;
+							cursor: pointer;
+							text-decoration: underline;
+							&:hover {
+								color: #8063a0 !important;
+							}
+							&:visited {
+								color: #56c2cc !important;
+							}
+						}
+						.button-action-login {
+							color: white !important;
+							background-color: #56c2cc;
+						}
+						.button-action-register {
+							color: white !important;
+							background-color: #8063a0;
+						}
+					}
+				}
+
+				.login-links {
+					color: #8063a0;
+					cursor: pointer;
+					&:hover {
+						color: #56c2cc !important;
+					}
+					&:visited {
+						color: #8063a0 !important;
+					}
+				}
+			}
+			@media screen and (max-width: 1280px) {
+				.pb-login {
+					min-height: 350px;
+					width: 350px;
+					padding: 20px;
+				}
+			}
+		}
+
+		> .pb-login-footer {
+			height: 60px;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			flex-direction: column;
+			span {
+				text-align: center;
+				button {
+					color: white !important;
+					background: none;
+					border: 0;
+					cursor: pointer;
+					&:hover {
+						font-weight: 800;
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-down(xs) {
+			> .pb-login-wrapper {
+				> .pb-login {
+					width: 100%;
+				}
+			}
+			> .pb-login-footer {
+				span {
+					font-size: 11px !important;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1280px) {
+		.sign-in-body {
+			padding: 18px 20px 0 20px;
+		}
+	}
+}
+
+.MuiPaper-root-81 {
+	height: 100% !important;
+}
+
+.role-dialog {
+	width: 100%;
+	height: auto;
+
+	.building-list-card {
+		height: 300px;
+	}
+}

@@ -1,0 +1,108 @@
+/*====== All Custom Variable Interduce Here ======*/
+// html font
+$html-font-size: 16px;
+
+// Block Settings
+$block-bg: $white;
+$block-border-radius: 5px;
+$block-border: none;
+$block-spacing: 1.25rem 1.25rem; //20px 20px;
+$block-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+$block-hover-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1), 0 10px 25px 0 rgba(0, 0, 0, 0.18);
+$block-margin-bottom: 1.875rem; //30px
+$block-transition: all 0.4s ease-in-out 0s;
+
+$block-title-color: $gray-600;
+$block-title-spacing: 0.9375rem 1.25rem; //15px 20px;
+$block-title-font-size: 1.125rem; //18px
+$block-title-font-weight: 400;
+$block-title-transform: capitalize;
+$block-title-border-color: $blue;
+$block-title-border-width: 4px;
+
+$block-contextual-color: #bdc1c3;
+$block-contextual-font-size: 1rem;
+
+$block-footer-border-width: 1px;
+$block-footer-border-color: $gray-300;
+
+//Breadcrumb Variable
+$breadcrumb-font-size: 1.875rem; //30px;
+$breadcrumb-font-color: $gray-600;
+
+// Dark theme
+$dark-bg: #424242;
+$dark-bg-color: #fff;
+$dark-bg-container: #303030;
+$dark-border-color: rgba(0, 0, 0, 0.1);
+$dark-placeholder: #303030;
+
+// Input Fields
+$input-lg-height: 52px;
+$input-radius: 40px;
+
+// Gradient Theme Color
+$overlay-dark: rgba(0, 20, 41, 0.79);
+$light-primary: darken($primary, 5%); // Primary
+$light-blue: darken($secondary, 5%); // blue
+$light-info: darken($info, 5%); // Info
+$light-success: darken($success, 5%); // Success
+$light-warning: darken($warning, 5%); // warning
+$light-danger: darken($red, 5%); // danger
+$light-purple: darken($purple, 5%); // purple
+
+// Navbar Varibale
+$navbar-height: 5rem; //80px;
+$navbar-bg: $white;
+$navbar-box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+$hamburger-icon-color: $gray-600;
+$navbar-icon-height: 40px;
+$navbar-icon-width: 40px;
+$navbar-link-color: $gray-600;
+
+// Footer Variable
+$footer-height: 50px;
+$footer-bg: $navbar-bg;
+$footer-box-shadow: $navbar-box-shadow;
+
+// Square Box
+$square-font-size: 0.5; // 50% relative to the container
+$square-box: (10, 15, 20, 30, 40, 50, 60, 70, 80, 100, 120);
+
+// Sidebar Variable
+$sidebar-width: 16.25rem; //280px;
+$sidebar-overlay: $light-primary;
+$sidebar-box-shadow: none;
+
+$sidebar-link-fontsize: 1rem; //14px
+$sidebar-link-font-weight: 400;
+$sidebar-link-font-color: $white;
+$sidebar-link-transform: capitalize;
+$sidebar-link-spacing: 0.9375rem 2rem; //15px 40px;
+
+$sidebar-icon-font-size: 1rem; //14px;
+
+$sidebar-hover-bg: rgba(0, 0, 0, 0.22);
+$sidebar-hover-color: $white;
+
+$sidebar-submenu-font-size: 1rem; //14px
+$sidebar-submenu-font-color: $white;
+$sidebar-submenu-spacing: 0.9375rem 2.5rem 0.9375rem 4.375rem;
+
+// Mini Sidebar Variable
+$mini-sidebar-width: 85px;
+
+// Social Link Variable
+$twitter-bg: #52aeff;
+$facebook-bg: #405de6;
+$google-bg: #f13a30;
+$pinterest-bg: #d32f2f;
+$instagram-bg: #8d6e63;
+$rss-bg: #ff9800;
+$tumblr-bg: #607d8b;
+$linkedin-bg: #0876de;
+$dribbble-bg: #f06292;
+$youturct-bg: #d50000;
+$github-bg: #424242;
+$skype-bg: #4fc3f7;
+$social-icon-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.19);

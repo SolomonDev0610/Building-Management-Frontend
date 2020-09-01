@@ -1,0 +1,205 @@
+.building-list-content {
+	flex: 1;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+	.image-form {
+		height: 100px;
+		width: 100%;
+		padding: 5px;
+		display: flex;
+
+		button {
+			flex: 1 0;
+			opacity: 0.8;
+			padding: 0;
+			display: flex;
+			position: relative;
+
+			span {
+				flex: 1 0;
+				height: 100%;
+				justify-content: space-around;
+				flex-direction: column;
+			}
+		}
+
+		button:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.building-new-content {
+	flex: 1 0;
+	flex-direction: column;
+
+	.body {
+		flex: 1 0;
+		display: flex;
+		height: auto;
+
+		> .pb-form-container {
+			flex: 1 0;
+			flex-direction: column;
+			display: flex;
+
+			> .pb-form-wrapper {
+				flex-direction: column;
+				display: flex;
+
+				.stepper-content {
+					flex: 1 0;
+				}
+
+				.stepper-footer {
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.building-new-content {
+		flex: 1 0;
+		flex-direction: column;
+
+		.body {
+			display: flex;
+			margin-left: 0;
+
+			> .pb-form-container {
+				flex: 0 0 100%;
+			}
+		}
+	}
+}
+
+.file-uplo .pb-form-button {
+	display: flex;
+	.pb-take-photo,
+	.taken-photo-container {
+		border: 1px dotted #707070;
+		margin-right: 15px;
+		width: 100px !important;
+		height: 100px;
+		margin-bottom: 15px;
+		.taken-photo {
+			height: 100%;
+			background: url() #e6e6e6 center center;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.card-floor {
+	padding: 0.75rem;
+	position: relative;
+	height: 150px;
+	.card-floor-component {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		background-color: #56c2cc;
+		flex-direction: column;
+		h1 {
+			color: white;
+		}
+	}
+	.card-floor-component-add {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		background-color: #bdbdbd;
+		transition: 0.25s all;
+		flex-direction: column;
+		cursor: pointer;
+		svg {
+			color: white;
+			font-size: 5rem;
+		}
+		p {
+			color: white;
+		}
+		@media screen and (max-width: 1280px) {
+			svg {
+				font-size: 3rem !important;
+			}
+			p {
+				font-size: 0.75rem;
+			}
+		}
+
+		&:hover {
+			background-color: #757575;
+		}
+	}
+	.card-floor-component-add-form {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		position: relative;
+
+		.close-add-form {
+			position: absolute;
+			top: 5%;
+			right: 0%;
+			svg {
+				color: #f44336;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.icon-logo-edit {
+		position: absolute;
+		bottom: 10%;
+		right: 10%;
+		opacity: 0;
+		cursor: pointer;
+		transition: opacity 0.5;
+		svg {
+			color: white;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.icon-logo-delete {
+		position: absolute;
+		top: 10%;
+		right: 7.5%;
+		opacity: 0;
+		cursor: pointer;
+		transition: opacity 0.5;
+		svg {
+			color: white;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+@media screen and (max-width: 1280px) {
+	.card-floor {
+		height: 100px !important;
+	}
+}
+
+.card-floor:hover .icon-logo-edit {
+	opacity: 1;
+}

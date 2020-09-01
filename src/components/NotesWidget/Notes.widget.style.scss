@@ -1,0 +1,86 @@
+.pb-notes-widget {
+	margin-bottom: 15px;
+	width: 100%;
+	height: auto !important;
+
+	.button-color {
+		background-color: #ffdf00;
+		color: white;
+	}
+
+	.img-box-wrapper {
+		justify-content: center;
+		align-content: center;
+		@media (max-width: 1024px) {
+			flex: 0 0 8.33%;
+			max-width: 8.33%;
+		}
+		@media (max-width: 636px) {
+			flex: 0 0 16.67%;
+			max-width: 16.67%;
+		}
+	}
+
+	.prof-img {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #e6e6e6;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		@media (min-width: 1025px) and (max-width: 1114px) {
+			width: 40px !important;
+			height: 40px !important;
+		}
+	}
+
+	.pb-button-wrapper {
+		position: relative;
+		border: 0;
+		border-radius: 0 !important;
+	}
+	.pb-button {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 99;
+	}
+
+	.notes-container {
+		height: auto;
+		flex: 1;
+	}
+
+	.notes-header {
+		flex: 0 0 10%;
+	}
+
+	.notes-body {
+		flex: 1;
+
+		.note-box {
+			p {
+				margin-bottom: 5px !important;
+			}
+		}
+	}
+
+	.flex-row-reverse {
+		.chat-box {
+			span {
+				text-align: right;
+			}
+		}
+	}
+
+	.flex-one {
+		flex: 1;
+	}
+
+	@media (max-width: 768px) {
+		margin: 0px;
+	}
+}

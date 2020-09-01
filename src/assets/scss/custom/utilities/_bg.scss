@@ -1,0 +1,70 @@
+/*=========== Background Utilities ==========*/
+.gradient-primary {
+	@include linearGradient($light-primary, $primary);
+	* {
+		color: $white;
+	}
+}
+.gradient-blue {
+	@include linearGradient($light-blue, $blue);
+	* {
+		color: $white;
+	}
+}
+.gradient-info {
+	@include linearGradient($light-info, $info);
+	* {
+		color: $white;
+	}
+}
+.gradient-success {
+	@include linearGradient($light-success, $success);
+	* {
+		color: $white;
+	}
+}
+.gradient-danger {
+	@include linearGradient($light-danger, $danger);
+	* {
+		color: $white;
+	}
+}
+.gradient-warning {
+	@include linearGradient($light-warning, $warning);
+	* {
+		color: $white;
+	}
+}
+.gradient-purple {
+	@include linearGradient($light-purple, $purple);
+	* {
+		color: $white;
+	}
+}
+.bg-pink {
+	background-color: $pink !important;
+}
+.bg-indigo {
+	background-color: $indigo !important;
+}
+.bg-teal {
+	background-color: $teal !important;
+}
+.bg-purple {
+	background-color: $purple !important;
+}
+.bg-yellow {
+	background-color: $orange !important;
+}
+.bg-facebook {
+	background-color: $facebook-bg;
+}
+.bg-twitter {
+	background-color: $twitter-bg;
+}
+.bg-google {
+	background-color: $google-bg;
+}
+.bg-linkedIn {
+	background-color: $linkedin-bg;
+}

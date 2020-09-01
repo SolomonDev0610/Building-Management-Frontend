@@ -1,0 +1,73 @@
+.FileUploader {
+	display: flex;
+
+	input {
+		display: none;
+	}
+
+	.pb-take-photo,
+	.taken-photo-container {
+		border: 1px dotted #707070;
+		margin-right: 15px;
+		width: 100px !important;
+		height: 100px !important;
+		margin-bottom: 15px;
+		border-radius: 4px;
+
+		.taken-photo {
+			height: 100%;
+			background: url() #e6e6e6 center center;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	.pb-take-photo {
+		svg path:not([fill='none']) {
+			fill: #707070;
+		}
+	}
+
+	.taken-photo-container {
+		position: realtive;
+		cursor: default;
+		background: #ddd;
+
+		img {
+			object-fit: cover;
+		}
+
+		svg path:not([fill='none']) {
+			fill: #fff;
+		}
+
+		.clear-button {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: rgba(0, 0, 0, 0.5);
+			opacity: 0;
+			transition: opacity 0.2s;
+			cursor: pointer;
+
+			a {
+				display: flex;
+				margin-right: 0.5em;
+			}
+		}
+
+		&:hover {
+			.clear-button {
+				opacity: 1;
+			}
+		}
+	}
+}

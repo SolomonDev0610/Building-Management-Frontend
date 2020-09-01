@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+html {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	overflow: hidden !important;
+	button {
+		outline: none !important;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: 'Lato', sans-serif;
+		flex: 1 0;
+		display: block;
+		height: auto;
+		background: linear-gradient(#eeeeee, #d6d6d6);
+		div#root {
+			flex: 1 0;
+			display: flex;
+			overflow: auto;
+		}
+	}
+
+	//PB RAINBOW
+	$red: #d62139;
+	$orange1: #f37f41;
+	$orange2: #f4843a;
+	$yellow: #fad10e;
+	$green: #67bd7f;
+	$teal1: #43c2ce;
+	$teal2: #56c2cc;
+	$indigo: #766fac;
+	$purple: #8063a0;
+	$magenta: #cf2549;
+
+	//tenant
+	.tenant-color-gradient {
+		background: linear-gradient($orange1, $red);
+	}
+	//owner or property-manager
+	.pm-color-gradient {
+		background: linear-gradient($yellow, $orange2);
+	}
+
+	//building manager
+	.bm-color-gradient {
+		background: linear-gradient($purple, $magenta);
+	}
+
+	//spare color
+	.spare-color-gradient {
+		background: linear-gradient($teal2, $indigo);
+	}
+	.test-one {
+		border: 1px solid black;
+		background-color: $teal2;
+	}
+	.test-two {
+		border: 1px solid black;
+		background-color: $purple;
+	}
+}

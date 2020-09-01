@@ -1,0 +1,91 @@
+.tenant-form {
+	flex: 1 0;
+	.image-form {
+		height: 100px;
+		width: 100%;
+		padding: 5px;
+		display: flex;
+		button {
+			flex: 1 0;
+			opacity: 0.8;
+			padding: 0;
+			display: flex;
+			position: relative;
+			span {
+				flex: 1 0;
+				height: 100%;
+				justify-content: space-around;
+				flex-direction: column;
+			}
+		}
+		button:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.tenant-form-content {
+	display: flex;
+	flex: 1 0;
+	flex-direction: column;
+
+	.body {
+		flex: 1 0;
+		display: flex;
+		position: relative;
+
+		> div:first-child {
+			flex: 0 0 100%;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.tenant-form-content {
+		.body {
+			> div:first-child {
+				flex: 1 0;
+			}
+		}
+	}
+}
+.tenant-create-note {
+	margin-top: 25px;
+	padding: 1rem;
+	border-left: 7px solid #56c2cc !important;
+	.tenant-create-note-header {
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+	.tenant-create-note-body {
+		font-size: 1.25rem;
+	}
+}
+
+.loader {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.pb-content-text-field {
+	height: 3rem;
+	div {
+		div {
+			margin: 10px;
+		}
+		input[type='text'] {
+			height: 2.25rem;
+			line-height: 2.25rem;
+		}
+	}
+}
+
+.table-label-no-data {
+	width: 100%;
+	height: 650px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,148 @@
+/*=========== Ecommerce Style ==========*/
+.shop-listing {
+  .rct-block {
+    padding: 1.875rem 3.125rem 1.875rem 0.625rem;
+  }
+  .media-body {
+    transform: translate3d(0%, 40%, 0);
+  }
+}
+.super {
+  top: -12px;
+  font-size: 15px;
+  margin-left: 10px;
+  color: $green;
+}
+// Invoice
+.invoice-head {
+  @include border(1px solid, $input-border-color, bottom);
+  ul {
+    margin: 0;
+    li {
+      display: inline-block;
+      border-left: 1px solid #000;
+      @include border(1px solid, $input-border-color, left);
+      padding: 1.25rem 1.875rem; //20px 30px;
+      a {
+        color: $gray-900;
+        i {
+          font-size: 1.625rem; //26px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+.address, .add-card {
+  span {
+    display: block;
+    color: $gray-600;
+    font-size: 14px;
+  }
+}
+.invoice-address, .order-status {
+  span {
+    display: block;
+    line-height: 2;
+  }
+}
+.invoice-title, .title {
+  font-weight: 300;
+  font-size: 2.25rem; //36px;
+  line-height: 60px;
+}
+.add-card {
+  @include border(1px solid, $gray-400, left right top bottom);
+  padding: 1.25rem;
+}
+.name {
+  color: $gray-900 !important;
+  font-weight: 500;
+}
+.rct-filter {
+  background-color: $block-bg;
+  box-shadow: $block-shadow;
+  height: $input-lg-height;
+  border-radius: $block-border-radius;
+  display: flex;
+  ul {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    li {
+      width: 50%;
+      margin: 0 !important;
+      text-align: center;
+      @include border(1px solid, $border-color, right);
+      line-height: $input-lg-height;
+      font-size: 1.5rem; //24px;
+      &:last-child {
+        border-right: none;
+      }
+      &:hover {
+        a {
+          color: $blue;
+        }
+      }
+      a {
+        color: $gray-900;
+      }
+    }
+  }
+}
+/*======== Responsive ========*/
+@media (max-width: 992px) and (min-width: 320px) {
+  .shop-listing {
+    .mr-50 {
+      margin-right: 0 !important;
+    }
+    .rct-block {
+      padding: 1.875rem 1rem 1.875rem 0.625rem;
+    }
+  }
+}
+@media(max-width: 767px) and (min-width: 320px) {
+  .shop-listing {
+    .media-body {
+      transform: translate3d(0%, 15%, 0);
+    }
+  }
+}
+@media(max-width: 700px) and (min-width: 320px) {
+  .shop-listing {
+    .d-flex {
+      display: inline-block !important;
+      width: 100%;
+      text-align: center;
+    }
+    .media {
+      width: 100%;
+      display: block;
+      .media-left {
+        width: 100%
+      }
+      .media-body {
+        width: 100%;
+        transform: translate3d(0%, 0%, 0);
+      }
+    }
+  }
+}
+@media (max-width: 575px) and (min-width: 320px) {
+  .shop-grid {
+    .rct-block-content {
+      text-align: center;
+    }
+  }
+  .invoice-wrapper {
+    .add-full-card {
+      &.d-flex {
+        display: inline-block !important;
+        width: 100%;
+      }
+      .add-card {
+        width: 100%;
+      }
+    }
+  }
+}

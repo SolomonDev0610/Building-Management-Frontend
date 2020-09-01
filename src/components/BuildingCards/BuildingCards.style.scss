@@ -1,0 +1,92 @@
+.component-list-wrapper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+
+	.component-list-head {
+		flex: 0 0 50px;
+		align-items: stretch;
+		display: flex;
+
+		> .filler {
+			box-shadow: none;
+			margin: 0;
+		}
+
+		> div {
+			margin-left: 15px;
+			display: flex;
+			align-items: center;
+			padding: 5px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+			padding: 0 1em;
+		}
+
+		.tenancy-add {
+			color: white !important;
+			margin-left: 20px;
+		}
+
+		.tenancy-show {
+			color: white !important;
+			margin-left: 10px;
+			background-color: #757575 !important;
+		}
+
+		.view-btn.active {
+			svg {
+				color: black;
+			}
+		}
+
+		.view-btn.white {
+			background-color: white !important;
+		}
+
+		.view-btn {
+			svg {
+				color: gray;
+			}
+		}
+	}
+
+	.component-list-body {
+		display: flex;
+		margin-top: 1em;
+
+		> .list-card-wrapper {
+			flex: 1;
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 1em;
+
+			@media screen and (min-width: 970px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@media screen and (min-width: 1400px) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			@media screen and (min-width: 1920px) {
+				grid-template-columns: repeat(4, 1fr);
+			}
+
+			@media screen and (min-width: 2080px) {
+				grid-template-columns: repeat(5, 1fr);
+			}
+
+			@media screen and (min-width: 2460px) {
+				grid-template-columns: repeat(6, 1fr);
+			}
+		}
+
+		> .list-list-wrapper {
+			flex: 1;
+		}
+	}
+
+	.pb-content-list-body-item {
+		height: auto !important;
+	}
+}

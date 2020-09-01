@@ -1,0 +1,42 @@
+/*====== Dark Layout Style Here ======*/
+body.dark-mode {
+  color: $dark-bg-color;
+}
+.dark-mode {
+  background-color: $dark-bg-container;
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $dark-placeholder !important;
+  }
+  .loader-overlay  {
+    background-color: rgba(0,0,0,0.8);
+  }
+  //main section
+  .rct-header, .rct-footer, .rct-block-footer, .card-footer, .list-group-item, .dropdown-menu, .report-title, .modal-content, input:not(.input-search),
+  select, .rct-filter, .report-status, .button-nav-wrapper button, [role="document"], textarea, .listSection, .sweet-alert, .rct-wysiwyg-editor,
+      {
+    background-color: $dark-bg !important;
+  }
+  .rct-mail-wrapper div, .todo-wrapper div, .chat-box-main, .chat-sidebar, .drawer-wrapper div, .comment-box, .card-base, {
+    background-color: $dark-bg-container;
+  }
+  h1,h2,h3,h4,h5,h6,p, span, a, table, th, td {
+    color: $dark-bg-color !important;
+  }
+  .pricing-wrapper, .about-wrapper, .panel-wrapper, .list-wrapper, .menu-paper-wrapper, .popover-wrapper, .date-time-wrapper,
+  .stepper-wrapper, .tabs-wrapper, .textfields-wrapper, .select-wrapper, .re-chart-wrapper, .icons-wrapper, .data-table-wrapper,
+  .redux-table-wrapper, .divider-wrapper, .drawer-wrapper, .feedback-wrapper, .userProfile-wrapper  {
+    .rct-block *,  {
+      color: $dark-bg-color !important;
+    }
+  }
+  .rct-block, .card, .panel, .rct-tabs header, .pricing-box, .chat-bubble.even,
+  .chat-head, .btn-light i {
+    background-color: $dark-bg;
+    color: $dark-bg-color;
+    border-color: $dark-border-color;
+  }
+  .rct-block *, input:not(.input-search), textarea, .modal-header, .modal-footer, .report-status *, .report-status,
+  .rct-mail-wrapper *, .todo-wrapper *, .chat-wrapper *, .dropdown *, .chat-footer,  {
+    border-color: $dark-border-color !important;
+  }
+}

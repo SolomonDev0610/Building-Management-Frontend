@@ -1,0 +1,103 @@
+/*======= Mini Sidebar Style Here =====*/
+.mini-sidebar {
+  .sidebar-user-block {
+    display: none;
+  }
+  .side-title {
+    padding: 0 3px;
+  }
+  .rct-sidebar {
+    width: $mini-sidebar-width;
+    -webkit-transition-property: top,bottom,width;
+    transition-property: top,bottom, width;
+    -webkit-transition-duration: .2s,.2s, .35s;
+    transition-duration: .2s,.2s, .35s;
+    -webkit-transition-timing-function: linear,linear,ease;
+    transition-timing-function: linear,linear,ease;
+    -webkit-overflow-scrolling: touch;
+    .site-logo {
+      .logo-normal {
+        opacity: 0;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        -ms-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0)
+      }
+    }
+    &:hover {
+      .logo-normal {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    .rct-mainMenu {
+      > li {
+        .menu-icon {
+          float: left;
+          height: 30px !important;
+          width: 40px !important;
+          text-align: center;
+          line-height: 30px;
+        }
+        > a {
+          .menu-icon {
+            @extend .menu-icon;
+            line-height: 25px;
+          }
+        }
+        > a .menu {
+          left: 45px;
+        }
+        .menu {
+          left: 60px;
+        }
+        .side-arrow {
+          right: 5px;
+        }
+        .menu, > a .menu, .side-arrow,  {
+          opacity: 0;
+          transition: all 0.4s linear 0s;
+          position: absolute;
+          -webkit-transform: translate3d(-25px, 0, 0);
+          -ms-transform: translate3d(-25px, 0, 0);
+          transform: translate3d(-25px, 0, 0)
+        }
+      }
+    }
+    &:hover {
+      width: $sidebar-width;
+      .rct-mainMenu, .sub-menu {
+        > li {
+          .menu, > a .menu, .side-arrow, a {
+            transform: translateZ(0);
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+        }
+      }
+    }
+  }
+  .sub-menu {
+    > li {
+      > a {
+        position: relative;
+        opacity: 0;
+        transition: all 0.4s linear 0s;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        -ms-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0)
+      }
+    }
+  }
+  .rct-header, .rct-footer {
+    left: $mini-sidebar-width;
+  }
+  .rct-app-content {
+    width: calc(100% - #{$mini-sidebar-width});
+    transition: all 150ms linear 0s;
+    will-change: width;
+  }
+}
